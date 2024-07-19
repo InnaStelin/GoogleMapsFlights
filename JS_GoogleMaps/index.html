@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <script src =
+           "https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link href =
+            "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">  
+    <link rel="stylesheet" href="style.css">   
+    <script src=
+            "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script type ="text/javascript"
+            src =
+            "https://maps.googleapis.com/maps/api/js?key=AIzaSyBatVjuORP6eRXbs4VEt_KGaAqGuPZKufk&libraries=places">
+    </script>
+     <script type="text/javascript" src="initialize.js"></script>
+     <script type="text/javascript" src="drawRoutes.js"></script>
+     <script type="text/javascript" src="drawRoute.js"></script>
+     <script type="text/javascript" src="drawMarker.js"></script>
+     <script type="text/javascript" src="loadData.js"></script>
+    </head>
+  </head>
+  <body onload="initialize()">  
+  <div class="container">
+    <div class="sidebar-container">
+      <div class="form-group">
+        <label class="form-label" for="selOrigin">Flying From:</label>
+        <select class="form-control" id="selOrigin" onclick="onListSelected()">
+        </select>
+        <label class="form-label" for="selDestination">Flying To:</label>
+        <select class="form-control" id="selDestination" onclick="onListSelected()">
+        </select>
+        <input class='btn btn-primary btn-sm' type='button' value='Search' size='4' onclick='drawRoutes()'>
+        <label class="small" id="noFlightsFound"></label>
+      </div>
+      <div id='attractionsInfo'>
+      </div>
+    </div>
+    <div class="map-container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">      
+            <div class ="map" id="map_canvas"></div>
+          </div>
+        <div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
