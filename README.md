@@ -1,4 +1,5 @@
 About This Project
+
 		This project draws flight routes on the map using google maps API.
 		Origin and destination of each flight are selected by the user in the panel 
 		on the right. Flight are drawn with all of its stops and stops are displayed as google maps markers.
@@ -13,19 +14,20 @@ About This Project
 		but rather a small subset of flights to demonstrate how they can be displayed 
 		on the map. Flights are loaded from routes text input file. It contains separate  
 		object for each origin, destination and stop.
+  
 		For example, flights from Boston to Tel Av-iv are stored as:
-		{"origin": "BOS", "destination": "TLV", "stops":"IST"},
-	   {"origin": "BOS", "destination": "TLV", "stops":"FRA"},
-	   {"origin": "BOS", "destination": "TLV", "stops":"EWR"},
-	   {"origin": "BOS", "destination": "TLV", "stops":"MUC"},
-	   {"origin": "BOS", "destination": "TLV", "stops":"YYZ"},
-	   {"origin": "BOS", "destination": "TLV", "stops":"FCO"},
-	   {"origin": "BOS", "destination": "TLV", "stops":"JFK"},
-	   {"origin": "BOS", "destination": "TLV", "stops":"AMS"},
-	   {"origin": "BOS", "destination": "TLV", "stops":"CDG"},
-	   {"origin": "BOS", "destination": "TLV", "stops":"LIS"},
-	   {"origin": "BOS", "destination": "TLV", "stops":"ZRH"},
-	   {"origin": "BOS", "destination": "TLV", "stops":"LHR"}
+		   {"origin": "BOS", "destination": "TLV", "stops":"IST"},
+		   {"origin": "BOS", "destination": "TLV", "stops":"FRA"},
+		   {"origin": "BOS", "destination": "TLV", "stops":"EWR"},
+		   {"origin": "BOS", "destination": "TLV", "stops":"MUC"},
+		   {"origin": "BOS", "destination": "TLV", "stops":"YYZ"},
+		   {"origin": "BOS", "destination": "TLV", "stops":"FCO"},
+		   {"origin": "BOS", "destination": "TLV", "stops":"JFK"},
+		   {"origin": "BOS", "destination": "TLV", "stops":"AMS"},
+		   {"origin": "BOS", "destination": "TLV", "stops":"CDG"},
+		   {"origin": "BOS", "destination": "TLV", "stops":"LIS"},
+		   {"origin": "BOS", "destination": "TLV", "stops":"ZRH"},
+		   {"origin": "BOS", "destination": "TLV", "stops":"LHR"}
 	   
 	Only one-stop flights are considered by the system at the moment.
 	In order to place markers on the map coordinates of each airport are required; 
@@ -42,6 +44,7 @@ About This Project
 
 Built With
        JavaScript, Visual Studio Code, Google Maps API
+       
 Usage
 	Select origin and destination from left-side panel controls. Controls 
 	contain drop-down lists of all possible origins and destinations 
